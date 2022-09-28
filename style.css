@@ -1,0 +1,94 @@
+html {
+    height: 100%;
+}
+
+body {
+    position:absolute; top:0; bottom:0; right:0; left:0;
+}
+
+body {
+    background: linear-gradient(320.54deg, #00069f 0%, #120010 72.37%),
+        linear-gradient(58.72deg, #69d200 0%, #970091 100%),
+        linear-gradient(121.28deg, #8cff18 0%, #6c0075 100%),
+        linear-gradient(121.28deg, #8000ff 0%, #000000 100%),
+        linear-gradient(180deg, #00ff19 0%, #24ff00 0.01%, #2400ff 100%),
+        linear-gradient(52.23deg, #0500ff 0%, #ff0000 100%),
+        linear-gradient(121.28deg, #32003a 0%, #ff4040 100%),
+        radial-gradient(50% 72.12% at 50% 50%, #eb00ff 0%, #110055 100%);
+    background-blend-mode: screen, color-dodge, color-burn, screen, overlay,
+        difference, color-dodge, normal;
+    background-repeat: no-repeat;
+}
+
+div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid;
+    padding: 5vh;
+    gap: 20px;
+    max-width: max-content;
+    margin: 0 auto;
+    margin-top: 35vh;
+    background: #8000ff8a;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.result,
+.buttons {
+    height: 40px;
+    display: flex;
+    /* border: 2px solid red; */
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+}
+
+.result {
+    color: #40f9ff;
+    font-size: xx-large;
+}
+
+         
+button {
+    padding: 7px 14px;
+    border: 1.5px solid #40f9ff;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #40f9ff;
+    border-radius: 4px;
+   }
+   
+   button::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #8000ff;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   button:hover::before {
+    width: 105%;
+   }
+   
+   button:hover {
+    color: #fff;
+   }
+   
