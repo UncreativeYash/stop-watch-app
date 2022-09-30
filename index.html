@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stop Watch App</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-   
-    <script src="./app.js"></script>
-</body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
+  <body>
+    <div class="container">
+      <div class="result">
+        <p>
+          <span id="hours">00</span>: 
+          <span id="minutes">00</span>:
+          <span id="seconds">00</span>:
+          <span id="miliseconds">00</span>
+        </p>
+      </div>
+      <div class="buttons">
+        <button id="start" onclick="startTimer()">START</button>
+        <button id="pause" onclick="pauseTimer()">PAUSE</button>
+        <button id="reset" onclick="resetTimer()">RESET</button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
 </html>
